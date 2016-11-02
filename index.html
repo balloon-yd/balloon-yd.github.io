@@ -1,2 +1,262 @@
-Hey Yaira!<br>
-Houston, we got hosting. :)
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>הבלון הפורח - יאירה אומנית הבלונים</title>
+		<link rel="icon" type="image/png" href="images/favicon.ico" />
+		<script src="./libs/js/jquery-3.1.0.min.js"></script>
+		<link href="./style/style.css" rel="stylesheet" type="text/css">
+		<!-- jQuery qtip lib (js + css) -->
+		<script src="./libs/js/jquery.qtip.min.js"></script>
+		<!-- Masonry images grid js -->
+		<script src="./libs/js/masonry.pkgd.min.js"></script>
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.css">
+	</head>
+	<body>
+		<!-- Top bar -->
+		<div id="topNavbar">
+			<!-- Zhuiyot -->
+			<img id="logo" src="./images/logo-balloon-artist-prototype.png" alt="prototype-logo">
+			<!-- Zhuiyot -->
+			<div class="topNavbarItem"><a href="#">עמוד הבית</a></div>
+			<div class="topNavbarItem"><a href="#">אירועים</a></div>
+			<div class="topNavbarItem"><a href="#">צור קשר</a></div>
+		</div>
+		<!-- Big menu -->
+		<div id="bigMenuContainerShadow">
+			<div id="bigMenuContainer">
+				<div id="bigMenuMainImage">
+					<video autoplay loop muted id="vid"> <!-- poster="polina.jpg" -->
+						<!-- Zhuiyot -->
+						<source src="./images/balloon-vid-v3.mp4" type="video/mp4">
+						<!-- Zhuiyot -->
+					</video>
+				</div>
+				<script>
+					var vid = document.getElementById("vid");
+					vid.currentTime = 5;
+				</script>
+				<div id="bigMenuSideMenu">
+					<div id="bigMenuSideMenuBody">
+						<!-- Zhuiyot -->
+						<div class="sideMenuItem"><a href="#">ימי-הולדת</a><img src="../10.jpg"></div>
+						<div class="sideMenuItem"><a href="#">סדנאות</a><img src="../balloon-rainbow-kid.jpg"></div>
+						<div class="sideMenuItem"><a href="#">חתונות</a><img src="./images/wedding/wedding-wz-heart.jpg"></div>
+						<div class="sideMenuItem"><a href="#">הופעות</a><img src="../2.jpeg"></div>
+						<div class="sideMenuItem"><a href="#">עוד בלגנים</a><img src="../9.jpg"></div>
+						<!-- Zhuiyot -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main body/sections -->
+		<div id="mainBody">
+			<div id="mainBodyFirstHeader">
+				<!-- <h2>לורם איפסום</h2> -->
+				<h2 id="ribbon">
+					<div id="ribbonContent">לורם איפסום</div>
+				</h2>
+				<style>
+					#mainBodyFirstHeader{
+						display: flex;
+						justify-content: center;
+					}
+
+					#ribbon{
+						font-size: 22px;
+						position: relative;
+						width: 50%;
+						/*background: #ba89b6;*/
+						background: #2bc4f3;
+						color: #fff;
+						text-align: center;
+						padding: 1em 0em;
+						margin: 4em auto 5em;
+						/*
+						font-size: 16px;
+						position: relative;
+						width: 50%;
+						background: #ba89b6;
+						color: #fff;
+						text-align: center;
+						padding: 1em 2em;*/ /*make sure to change it because my em game is shit!*/
+						/*margin: 2em auto 3em;*/
+					}
+
+					#ribbon:before, #ribbon:after{
+						content: '';
+						position: absolute;
+						bottom: -1em;
+						display: block;
+						/*border: 1.5em solid #986794;*/
+						border: 1.5em solid #25a0c6;
+						z-index: -1;
+					}
+
+					#ribbon:before{
+						left: -2em;
+						border-right-width: 1.5em;
+						border-left-color: transparent;
+					}
+
+					#ribbon:after{
+						right: -2em;
+						border-left-width: 1.5em;
+						border-right-color: transparent;	
+					}
+
+					#ribbonContent:before, #ribbonContent:after{
+						content: '';
+						position: absolute;
+						display: block;
+						border-style: solid;
+						/*border-color: #804f7c transparent transparent transparent;*/
+						border-color: #1d83a2 transparent transparent transparent;
+						bottom: -1em;
+					}
+
+					#ribbonContent:before {
+						left: 0;
+						border-width: 1em 0 0 1em;
+					}
+					#ribbonContent:after {
+						right: 0;
+						border-width: 1em 1em 0 0;
+					}
+				</style>
+			</div>
+			<style>
+				/*#mainBodyFirstHeader h2{*/
+					/*height: 250px;*/
+				  /*  position: relative;
+					text-align: center;
+					margin-top: 100px;
+					margin-bottom: 150px;
+					font-size: 30px;
+					color: #03a9f4;
+				}
+
+				#mainBodyFirstHeader h2:before{
+					content: '';
+					position: absolute;
+					bottom: -10px;
+					left: calc(50% - 125px);
+					width: 250px;
+					height: 2px;
+					background: #03a9f4;
+				}
+
+				#mainBodyFirstHeader h2:after{
+					content: '';
+					position: absolute;
+					bottom: -15px;
+					left: calc(50% - 5px);
+					width: 10px;
+					height: 10px;
+					background: #fff;
+					border-top: 2px solid #03a9f4;
+					border-right: 2px solid #03a9f4;
+					transform: rotate(135deg);
+				}*/
+			</style>
+			<div id="mainBodyFirst" class="mainBodySection">
+				<!-- <img src="./images/v1.png"> -->
+			</div>
+			<div id="mainBodySecond" class="mainBodySection">
+			<!-- YouTube videos here -->
+				<div id="vids">
+					<div class="vid" data-tooltip="מסיבת יום-הולדת לדוגמא" data-hasqtip="0" aria-describedby="qtip-0">
+						<iframe src="https://www.youtube.com/embed/NWvTOHoShYk" frameborder="0" height="280" width="520" allowfullscreen=""></iframe>
+					</div>
+					<div class="vid" style="margin-left: 40px;" data-tooltip="סדנת בלונים לדוגמא" data-hasqtip="1" aria-describedby="qtip-1">
+						<iframe src="https://www.youtube.com/embed/m9IVWDwEXJs" frameborder="0" height="280" width="520" allowfullscreen=""></iframe>
+					</div>
+				</div>
+			</div>
+			<div id="mainBodyThird" class="mainBodySection"></div>
+			<div id="mainBodyForth" class="mainBodySection">
+				<div id="imgsGridContainer">
+				<h2>תמונות מאירועים</h2>
+					<div id="imgsGridBody">
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						<div class="gridItem"></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom bar -->
+		<div id="bottomBar">
+			<div id="bottomBarUpperPart">
+				<div id="bottomBarUpperPartInnerText">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק תצטנפל בלינדו למרקל אס?<br>
+				לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.</div>
+			</div>
+			<div id="bottomBarLowerPart">
+				<div id="bottomBarBottomPartContainer">
+					<!-- Left side -->
+					<div id="bottomBarLogo">
+						<!-- Zhuiyot -->
+						<img src="./images/logo-balloon-artist-prototype.png" alt="prototype-logo">
+						<!-- Zhuiyot -->
+					</div>
+					<!-- Right side -->
+					<div id="bottomBarLinksTableContainer">
+						<div class="bottomBarLowerPartLinkItem"><a href="#">דף הבית</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">אירועי עבר</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">אודות</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">פרטים נוספים</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">גלריה</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">צרו קשר</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Masonry Grid
+			$('#imgsGridBody').masonry({
+				itemSelector: '.gridItem',
+				columnWidth: 160,
+				gutter: 10
+			});
+
+			$(function(){
+					$('[data-tooltip]').qtip({
+						content:{
+							attr: 'data-tooltip'
+						},
+// 						hide:{
+// 							event: false,
+// 							inactive: 1400
+// 						},
+						position:{
+							my: 'bottom center',
+							at: 'top center'
+						},
+						style:{
+							classes: 'qtip-dark qtip-shadow qtip-rounded myqTip',
+							
+						}
+					});
+				});
+		</script>
+	</body>
+</html>

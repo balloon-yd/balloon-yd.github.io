@@ -1,0 +1,584 @@
+body{
+	margin: 0;
+}
+
+/*
+	Top navigation bar style
+*/
+
+#logo{
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	width: 220px;
+	height: 80px;
+	z-index: 12;
+}
+
+#topNavbar{
+	display: flex;
+	flex-direction: row-reverse;
+	min-height: 85px;
+	border-bottom: 2px solid #ccc;
+}
+
+.topNavbarItem{
+	background: #fff; 
+	min-width: 150px;
+	min-height: 50px;
+	color: #555;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: PT Sans;
+}
+
+.topNavbarItem > a{
+	display: block;
+	text-decoration: none;
+	color: #555;
+	font-size: 1.2em;
+	padding: 20px 20px;
+}
+
+.topNavbarItem:hover{
+	font-weight: 700;
+	color: #000;
+	box-shadow: 0 8px 6px -6px blue;
+}
+
+/*
+	Main section with menu and large images responsive slider
+*/
+
+#bigMenuContainerShadow{
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 1px 18px #6e8999;
+	border-radius: 200px / 10px;
+}
+
+#bigMenuContainer{
+	display: flex;
+	/*overflow: hidden; // Add this if you want to remove the video-blur-filter-edges*/
+}
+
+#bigMenuMainImage{
+	width: 1150px;
+	height: 450px;
+	overflow: hidden;
+	/*-webkit-filter: blur(6px) saturate(2.0);*/
+	/*background-image: url(../images/10_V3.jpg);*/
+	background-size: cover;
+	background: #fff;
+}
+
+#bigMenuMainImage > video{
+	-webkit-filter: blur(6px) saturate(2.0);
+}
+
+#bigMenuSideMenu{
+	flex: 1;
+	background: #333;
+}
+
+#bigMenuSideMenu{
+	display: flex;
+	align-items: center;
+	background: #f4f4f4;
+}
+
+#bigMenuSideMenuBody{
+	display: flex;
+	flex-direction: column;
+	/*height: 300px;*/
+	height: 320px; /*Changed after adding 'Hatunot item'*/
+	width: 100%;
+}
+
+.sideMenuItem{
+	display: flex;
+	width: 100%;
+	flex: 1;
+	/*height: 100%; - because of flex*/
+	direction: rtl;
+}
+
+.sideMenuItem:hover{
+	background: #E0DADF;
+}
+
+.sideMenuItem > a{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: 600;
+	color: #e8493d;
+	padding-right: 18px;
+}
+
+.sideMenuItem > img{
+	position: absolute;
+	left: -1150px;
+	top: 0px;
+	width: 1150px;
+	height: 450px;
+	z-index: 10;
+	transition: all 1s ease;
+}
+
+.sideMenuItem > a:hover + img{
+	left: 0px;
+}
+
+/*
+	Main Body
+*/
+
+#mainBody{
+	width: 100%;
+	/* for testing*/
+	/*background: #AD6FE3;*/
+	/* for testing*/
+}
+
+#mainBodyFirst{
+	background-image: url(../images/bg-cake-icing.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	/*margin-top: 300px;*/
+}
+
+#mainBodyFirst > img{
+	width: 100%;
+	height: 100%;
+}
+
+#mainBodySecond{
+	height: 650px;
+	border-top: 3px solid #4646bd;
+	border-bottom: 3px solid #4646bd;
+}
+
+#mainBodyThird{
+	background-image: url(../images/bg-kid-joy-fixed-size.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.mainBodySection{
+	width: 100%;
+	height: 700px;
+	/* for testing*/
+	/*background: #FFCC66;*/
+	/*border: 1px solid #333;*/
+	/* for testing*/				
+}
+
+#vids{
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 1085px;
+}
+
+.vid{
+	display: inline-block;
+	box-shadow: 0 0px 18px #6e8999;
+/* 		border-radius: 500px / 10px; */
+}
+
+/*
+	Masonry grid
+*/
+
+#mainBodyForth{
+	height: 1100px;
+	background: #e3e3e3;
+	border-top: 3px solid #006064;
+	border-bottom: 3px solid #00BCD4;
+}
+
+#imgsGridContainer{
+	margin: 0 auto;
+	max-width: 670px;
+	box-sizing: border-box;
+	padding-top: 50px;
+}
+
+#imgsGridContainer h2{
+	padding: 30px 10px;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: #00BCD4;
+	text-align: center;
+	font-family: 'alef';
+	/* margin: auto; */
+	margin-bottom: 10px;
+}
+
+.gridItem{
+	background: purple;
+	/*background: #ccc;*/
+	height: 60px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	border-radius: 4px;
+	padding: 20px;
+	box-sizing: border-box;
+	color: white;
+	width: 160px;
+	background-position: center;
+	background-size: cover;
+}
+
+#imgsGridBody .gridItem:nth-child(4n-5) {
+	height: 50px;
+}
+#imgsGridBody .gridItem:nth-child(2n) {
+	height: 300px;
+}
+#imgsGridBody .gridItem:nth-child(3n) {
+	height: 120px;
+}
+
+#imgsGridBody .gridItem:nth-child(1) {
+	background-image: url(../images/for-masonry-grid/wide.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(2) {
+	background-image: url(../images/for-masonry-grid/deflated-balloons.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(3) {
+	background-image: url(../images/for-masonry-grid/workshop1.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(4) {
+	background-image: url(../images/for-masonry-grid/dogs.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(5) {
+	background-image: url(../images/for-masonry-grid/yoda.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(6) {
+	background-image: url(../images/for-masonry-grid/workshop2.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(7) {
+	background-image: url(../images/for-masonry-grid/duck.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(8) {
+	background-image: url(../images/for-masonry-grid/workshop3.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(9) {
+	background-image: url(../images/for-masonry-grid/train.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(10) {
+	background-image: url(../images/for-masonry-grid/heros-kid.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(11) {
+	background-image: url(../images/for-masonry-grid/superman.jpeg);
+}
+
+#imgsGridBody .gridItem:nth-child(12) {
+	background-image: url(../images/for-masonry-grid/heros.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(13) {
+	background-image: url(../images/for-masonry-grid/swans.png);
+}
+
+#imgsGridBody .gridItem:nth-child(14) {
+	height: 350px;
+	background-image: url(../images/for-masonry-grid/yoda.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(15) {
+	background-image: url(../images/for-masonry-grid/bride.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(16) {
+	background-image: url(../images/for-masonry-grid/workshop4-long-happy-kids.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(17) {
+	background-image: url(../images/for-masonry-grid/workshop3-help.jpg);
+}
+
+#imgsGridBody .gridItem:nth-child(18) {
+	height: 180px;
+	background-image: url(../images/for-masonry-grid/superman.jpeg);
+}
+
+#imgsGridBody .gridItem:nth-child(19) {
+	height: 120px;
+	background-image: url(../images/for-masonry-grid/groom-n-bride.jpg);
+}
+
+/*
+	Bottom bar
+*/
+
+@font-face {
+	font-family: "alef";
+	src: url(./fonts/Alef-Regular.ttf);
+}
+
+@font-face {
+	font-family: "alef";
+	src: url(./fonts/Alef-Bold.ttf);
+	font-weight: bold;
+}
+
+#bottomBar{
+	/*margin-top: 300px;*/
+}
+
+#bottomBarUpperPart{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	background: #3da490;
+}
+
+#bottomBarUpperPartInnerText{
+	width: 700px;
+	direction: rtl;
+	color: #fcfcfc;
+	text-align: center;
+	font-family: "alef";
+	font-size: 17px;
+	/*font-weight: bold;*/
+}
+
+#bottomBarLowerPart{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 300px;
+	background: #264c45;
+	font-family: "alef";
+}
+
+#bottomBarBottomPartContainer{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+}
+
+#bottomBarLogo > img{
+	width: 360px;
+	height: 150px;
+	border-right: 2px solid #889faf;
+	padding-right: 55px;
+}
+
+#bottomBarLinksTableContainer{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	width: 670px;
+	height: 180px;
+	margin-left: 55px;
+	/* for testing*/
+	/*border: 1px solid #333;*/
+	/* for testing*/
+}
+
+.bottomBarLowerPartLinkItem{
+	width: 280px;
+	height: 25px;
+	border-bottom: 1px solid #76bbae;
+	margin-left: 40px;
+	direction: rtl;
+	color: #fcfcfc;
+	/* for testing*/
+	/*background: green;*/
+	/* for testing*/
+}
+
+.bottomBarLowerPartLinkItem > a{
+	text-decoration: none;
+	color: #fcfcfc;
+}
+
+/*
+	Other
+*/
+
+/*#topNavbar{
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+}
+
+#topNavbarContainer{
+	width: 600px;
+	margin-left: auto;
+}
+
+#home_nav {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 7%;
+	font-family: 'PT Sans' ,serif;
+	background: #fff;
+	margin: 0;
+	color: #333;
+	font-weight: 300;
+}
+
+#home_nav ul {
+	width: 100%;
+	display: table;
+	position: static;
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#home_nav li {
+	display: table-cell;
+	float: none;
+	width: 20%;
+	border: 0;
+	border-radius: 0!important;
+	background: 0 0;
+
+	list-style: none;
+	font-weight: 300;
+}
+
+#home_nav li a {
+	font-size: 1.4em;
+	white-space: nowrap;
+	padding: .5em 0;
+	display: block;
+	color: #555;
+	background: 0 0;
+	text-align: center;
+	opacity: .8;
+	text-decoration: none;
+	margin-bottom: 1px;
+
+}
+
+#home_nav li a:hover {
+	font-weight: 700;
+	color: #000;
+	box-shadow: 0 8px 6px -6px blue;
+}
+
+#mainHead{
+	box-shadow: 0 1px 18px #6e8999;
+	border-radius: 200px / 10px;
+}
+
+#header{
+	width: 85%;
+	float: left;
+	height: 370px;
+    background-image: url('Photos/o-OIL-WORKER-facebook.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px -60px;
+	position: relative;
+}
+
+
+#header img{
+	border-radius: 200px;
+	box-shadow: 0px 0px 10px 7px #fff;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	bottom: 45px;
+	left: 50px;
+	z-index: 11;
+}
+
+#header h1{
+	color: #fcfcfc;
+	font-family: Arial, Arial Narrow, Arial Rounded MT Bold;
+	font-size: 65px;
+	font-weight: 20;
+	text-shadow: 2px 2px 5px black;
+	margin-top: 130px;
+}
+
+#navigate{
+	margin-top: 0px;
+    width: 15%;
+    height: 370px;
+    background-color: #fff;
+    float: right;
+    background-color: #f4f4f4;
+    font-weight: 700;
+}
+
+#nav_top{
+    color: #888;
+    font-family: 'PT Sans';
+    font-size: 25px;
+    text-align: right;
+}
+
+#nav_top_header{
+    margin-right: 12px;
+    line-height: 60px;
+    visibility: hidden;
+}
+
+#nav_body{
+    text-align: right;
+    font-family: 'PT Sans';
+}
+
+#nav_body ul{
+    list-style: none;
+    padding: 0;
+}
+
+#nav_body ul img{
+	position: absolute;
+	left: -1500px;
+	top: 53px;
+	width: 85%;
+	height: 370px;
+	z-index: 10;
+	transition: all 1s ease;
+}
+
+#nav_body a:hover + img{
+    left: 0px;
+}
+
+#nav_body li{
+    padding-right: 10px;
+    line-height: 45px;
+}
+
+#nav_body li:hover{
+    background-color: #E0DADF;
+}
+
+#nav_body li a{
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+*/
