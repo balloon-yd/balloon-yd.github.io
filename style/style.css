@@ -68,9 +68,9 @@ body{
 	height: 450px;
 	overflow: hidden;
 	/*-webkit-filter: blur(6px) saturate(2.0);*/
-	/*background-image: url(../images/10_V3.jpg);*/
+	background-image: url(../images/balloons-in-the-air.jpeg);
 	background-size: cover;
-	background: #fff;
+	/*background: #fff;*/
 }
 
 #bigMenuMainImage > video{
