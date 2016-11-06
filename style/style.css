@@ -117,10 +117,11 @@ body{
 	align-items: center;
 	height: 100%;
 	text-decoration: none;
-	font-size: 19px;
+	font-size: 29px;
 	font-weight: 600;
 	color: #e8493d;
-	padding-right: 18px;
+	padding-right: 20px;
+    font-family: 'Amatica';
 }
 
 .sideMenuItem > img{
