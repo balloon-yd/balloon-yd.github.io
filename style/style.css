@@ -341,6 +341,17 @@ body{
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: "Amatica";
+	src: url(./fonts/AmaticaSC-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Amatica";
+	src: url(./fonts/AmaticaSC-Bold.ttf);
+	font-weight: bold;
+}
+
 #bottomBar{
 	/*margin-top: 300px;*/
 }
