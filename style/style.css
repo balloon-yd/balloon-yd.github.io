@@ -248,62 +248,50 @@ body{
 }
 
 #imgsGridBody .gridItem:nth-child(1) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/elephant-pink.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(2) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/darth-vader.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(3) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/statue-balloon-dog.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(4) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/balloon-holder.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(5) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/example-artist2.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(6) {
-	/*VVV*/
-	background-image: url(../images/for-masonry-grid/darth-vader.jpg);
+	background-image: url(../images/for-masonry-grid/party-hats-3-people.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(7) {
-	/*XVX*/
 	background-image: url(../images/for-masonry-grid/statue-balloon-dog.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(8) {
-	/*XVX*/
 	background-image: url(../images/for-masonry-grid/under-the-sea.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(9) {
-	background-image: url(../images/for-masonry-grid/train.jpg);
+	background-image: url(../images/for-masonry-grid/elephant-pink.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(10) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/class-girl-learning.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(11) {
-	/*VVV*/
-	background-image: url(../images/for-masonry-grid/party-hats-3-people.jpg);
-	/*background-image: url(../images/for-masonry-grid/example-artist3.jpg);*/
+	background-image: url(../images/for-masonry-grid/example-artist3.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(12) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/long-raw-balloons.jpg);
 }
 
@@ -321,7 +309,6 @@ body{
 }
 
 #imgsGridBody .gridItem:nth-child(16) {
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/example-artist.jpg);
 }
 
@@ -331,12 +318,11 @@ body{
 
 #imgsGridBody .gridItem:nth-child(18) {
 	height: 180px;
-	background-image: url(../images/for-masonry-grid/superman.jpeg);
+	background-image: url(../images/for-masonry-grid/example-artist2.jpg);
 }
 
 #imgsGridBody .gridItem:nth-child(19) {
 	height: 120px;
-	/*VVV*/
 	background-image: url(../images/for-masonry-grid/long-raw-balloons.jpg);
 }
 
