@@ -357,6 +357,11 @@ body{
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: "felix007";
+	src: url(./fonts/felix007/felix007.ttf);
+}
+
 #bottomBar{
 	/*margin-top: 300px;*/
 }
