@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>בלון פורח - יאירה אומנית הבלונים</title>
+		<link rel="icon" type="image/png" href="images/favicon.ico" />
+		<script src="./libs/js/jquery-3.1.0.min.js"></script>
+		<link href="./style/style.css" rel="stylesheet" type="text/css">
+		<!-- jQuery qtip lib (js + css) -->
+		<script src="./libs/js/jquery.qtip.min.js"></script>
+		<!-- Masonry images grid js -->
+		<script src="./libs/js/masonry.pkgd.min.js"></script>
+		<link rel="stylesheet" href="./libs/css/jquery.qtip.min.css">
+	</head>
+	<body>
+		<!-- Top bar -->
+		<div id="topNavbar">
+			<!-- Zhuiyot -->
+			<!-- <img id="logo" src="./images/logo-balloon-artist-prototype.png" alt="prototype-logo"> -->
+			<img id="logo" src="./images/balloons-logo-temp-free-cc-2.jpg" alt="prototype-logo">
+			<!-- Zhuiyot -->
+			<div class="topNavbarItem"><a href="index.html">עמוד הבית</a></div>
+			<div class="topNavbarItem"><a href="#">גלריה</a></div>
+			<div class="topNavbarItem"><a href="contact.html">צור קשר</a></div>
+		</div>
+		
+
+		<!-- Main Body -->
+		
+		<style>
+			#mainBody{
+				height: 400px;
+				width: 100%;
+			}
+
+			#mainBody > h2{
+				text-align: center;
+				font-size: 60px;
+				direction: rtl;
+				font-family: 'Amatica';
+			}
+		</style>
+
+		<div id="mainBody">
+			<h2>פה יהיה תוכן...</h2>
+		</div>
+
+		<!-- Bottom bar -->
+		<div id="bottomBar">
+			<div id="bottomBarUpperPart">
+				<div id="bottomBarUpperPartInnerText">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק תצטנפל בלינדו למרקל אס?<br>
+				לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.</div>
+			</div>
+			<div id="bottomBarLowerPart">
+				<div id="bottomBarBottomPartContainer">
+					<!-- Left side -->
+					<div id="bottomBarLogo">
+						<!-- Zhuiyot -->
+						<img src="./images/logo-balloon-artist-prototype.png" alt="prototype-logo">
+						<!-- Zhuiyot -->
+					</div>
+					<!-- Right side -->
+					<div id="bottomBarLinksTableContainer">
+						<div class="bottomBarLowerPartLinkItem"><a href="#">דף הבית</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">אירועי עבר</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">אודות</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">פרטים נוספים</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">גלריה</a></div>
+						<div class="bottomBarLowerPartLinkItem"><a href="#">צרו קשר</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// Masonry Grid
+			$('#imgsGridBody').masonry({
+				itemSelector: '.gridItem',
+				columnWidth: 160,
+				gutter: 10
+			});
+
+			$(function(){
+					$('[data-tooltip]').qtip({
+						content:{
+							attr: 'data-tooltip'
+						},
+// 						hide:{
+// 							event: false,
+// 							inactive: 1400
+// 						},
+						position:{
+							my: 'bottom center',
+							at: 'top center'
+						},
+						style:{
+							classes: 'qtip-dark qtip-shadow qtip-rounded myqTip',
+							
+						}
+					});
+				});
+		</script>
+	</body>
+</html>
