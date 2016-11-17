@@ -11,6 +11,8 @@
 		<!-- Masonry images grid js -->
 		<script src="./libs/js/masonry.pkgd.min.js"></script>
 		<link rel="stylesheet" href="./libs/css/jquery.qtip.min.css">
+		<!-- Font Awesome lib -->
+		<link rel="stylesheet" href="./libs/css/font-awesome/css/font-awesome.min.css">
 	</head>
 	<body>
 		<!-- Top bar -->
@@ -46,9 +48,29 @@
 				direction: rtl;
 				font-family: 'Amatica';
 			}
+
+			#mainBody > .container{
+				display: flex;
+				justify-content: space-between;
+				width: 80%;
+				margin: auto;
+			    margin-top: 85px;
+			}
+
+			.fontIcon{
+				font-size: 10em;
+				color: #3a79b8;
+			}
 		</style>
 
 		<div id="mainBody">
+			<div class="container">
+				<div class="contactContainer"><i class="fa fa-facebook-official fontIcon" aria-hidden="true"></i></div>
+				<div class="contactContainer"><i class="fa fa-envelope-o fontIcon" aria-hidden="true"></i></div>
+				<div class="contactContainer"><i class="fa fa-mobile fontIcon" aria-hidden="true"></i></div>
+				<div class="contactContainer"><i class="fa fa-map-marker fontIcon" aria-hidden="true"></i></div>
+				<div class="contactContainer"><i class="fa fa-youtube-play fontIcon" aria-hidden="true"></i></div>
+			</div>
 			<h2>פה יהיה תוכן...</h2>
 		</div>
 
