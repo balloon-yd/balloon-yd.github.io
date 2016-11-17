@@ -480,18 +480,6 @@ body{
 	font-weight: 100;
 }
 
-#mainBody{
-	height: 400px;
-	width: 100%;
-}
-
-#mainBody > h2{
-	text-align: center;
-	font-size: 60px;
-	direction: rtl;
-	font-family: 'Amatica';
-}
-
 
 /*
 	Other
