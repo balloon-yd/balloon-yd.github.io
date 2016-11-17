@@ -23,6 +23,45 @@
 			<div class="topNavbarItem"><a href="galery.html">גלריה</a></div>
 			<div class="topNavbarItem"><a href="contact.html">צור קשר</a></div>
 		</div>
+
+		<div id="coverSection">
+			<div class="container">
+				<h2 id="header">בוא נהיה בקשר!</h2>
+			</div>
+		</div>
+
+		<style>
+			#coverSection{
+				width: 100%;
+				height: 600px;
+				background-image: url(./images/contact1_downsize.jpg);
+				background-size: cover;
+				/*filter: blur(5px);*/
+			}
+
+			#coverSection > .container{
+				height: 100%;
+			    display: flex;
+			    justify-content: center;
+			    align-items: flex-end;
+			}
+
+			#coverSection h2#header::before{
+				/*background-image: url(./images/contact1_downsize.jpg);
+				-webkit-filter: blur(5px);
+				-o-filter: blur(5px);
+				filter: blur(5px);*/
+			}
+
+			#coverSection h2#header{
+				font-size: 104px;
+			    direction: rtl;
+			    margin: 0px;
+		        margin-bottom: 1.4em;
+			    font-family: 'Amatica';
+				font-weight: 100;
+			}
+		</style>
 		
 
 		<!-- Main Body -->
